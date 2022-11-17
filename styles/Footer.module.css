@@ -18,6 +18,9 @@
 .getApp{
   margin-top: 2rem;
 }
+.store{
+  display: flex;
+}
 
 .socialMedia{
   margin: 2rem;
@@ -25,10 +28,19 @@
   flex-direction: row;
 }
 
-.subcribe{
+.subscribe{
   margin-top: 2rem;
+  background-color: rgb(71, 66, 66);
+  color: white;
+  padding: 1rem;
+}
+
+#email{
+  background-color: blue;
 }
 
 .end{
+  display: flex;
+  justify-content: center;
 
 }

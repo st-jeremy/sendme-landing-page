@@ -1,5 +1,6 @@
 import Image from "next/image";
-import AiOutlineMenu from 'react-icons/ai';
+import styles from '../styles/Navbar.module.css';
+import Link from 'next/link';
 
 import {
   Drawer,
@@ -17,24 +18,6 @@ import {
   IconButton
 } from '@chakra-ui/react';
 
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-  ChevronDownIcon,
-  HamburgerIcon,
-  ExternalLinkIcon,
-  RepeatIcon,
-  EditIcon,
-  AddIcon
-} from '@chakra-ui/react'
-
-
 import React from "react";
 
 const Navbar = () => {
@@ -42,25 +25,30 @@ const Navbar = () => {
   function PlacementExample() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [placement, setPlacement] = React.useState('right')
+
   
     return (
       <>
         <RadioGroup defaultValue={placement} onChange={setPlacement}>
           
         </RadioGroup>
-        <Button colorScheme='blue' onClick={onOpen} >
-        Shade
+        <Button onClick={onOpen} left>
+          <Image src='/menu.png' width={30}  height={30} alt='sendme logo'/>
         </Button>
         
 
-        <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
+        <Drawer placement={placement} onClose={onClose} isOpen={isOpen} size={ 50 }>
           <DrawerOverlay />
           <DrawerContent>
-            <DrawerHeader borderBottomWidth='1px'>Basic Drawer</DrawerHeader>
-            <DrawerBody>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
+            <DrawerCloseButton />
+            <DrawerHeader borderBottomWidth='1px'>
+              <Image src='/sendme-logo.png' width={70}  height={29} alt='sendme logo'/>
+            </DrawerHeader>
+
+            <DrawerBody width='50%' >
+              <Link href="/">Our Products</Link> <br />
+              <Link href="/">For Businesses</Link> <br />
+              <Link href="/">Our Culture</Link>
             </DrawerBody>
           </DrawerContent>
         </Drawer>
@@ -69,13 +57,12 @@ const Navbar = () => {
   }
 
   return (
-    <>
-      <h1>Sendme</h1>
 
-      <PlacementExample />
+    <div className={ styles.navbar }>
+      <Image src='/sendme-logo.png' width={70}  height={29} alt='sendme logo'/>
+      <PlacementExample  />
+    </div>
 
-    
-    </>
   );
 }
  

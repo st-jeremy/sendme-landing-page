@@ -42,7 +42,7 @@ export default function Home() {
         </div>
 
         <div className={styles.comingSoon}>
-          <Image src='/coming-soon.png' width={700}  height={51} alt='google play'/>
+          <Image src='/coming-soon.png' width={700} height={51}  quality="100" alt='google play'/>
         </div>
 
         <div className={styles.animalProtein}>
