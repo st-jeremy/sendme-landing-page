@@ -1,0 +1,34 @@
+.footer{
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+.contactUs{
+  margin-top: 2rem;
+}
+
+.company{
+  margin-top: 2rem;
+}
+
+.earnWithSendme{
+  margin-top: 2rem;
+}
+
+.getApp{
+  margin-top: 2rem;
+}
+
+.socialMedia{
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.subcribe{
+  margin-top: 2rem;
+}
+
+.end{
+
+}

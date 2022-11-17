@@ -80,6 +80,36 @@
 
 /* earnWithSendme */
 .earnWithSendme{
-  padding: 0 1rem;
+  padding: 1rem;
+  background-color: #FDEEEE;
+}
+.earnWithSendme .box{
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+}
+.earnWithSendme input{
+  display: flex;
+  flex-direction: column;
+  padding: 13.278px 11.8027px;
+  gap: 7.38px;
+  width: 125.84px;
+  height: 42.2px;
+  background: #FF0000;
+  border-radius: 7.37667px;
+}
+
+/* mobileApp */
+.mobileApp{
+  background: #FF0000;
+}
+
+/* FAQ */
+.FAQ{
+  background-color: #1F1F1F;
+  color: white;
+}
+.row{
+  display: flex;
 }
 

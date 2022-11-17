@@ -87,33 +87,59 @@ export default function Home() {
         <div className={styles.earnWithSendme}>
           <h1>Would you like to Earn With Sendme ?</h1>
           <p>You can make money just by buying sendme products on behalf of your friends, colleagues, or neighbors.</p>
+
           <p>You can earn:</p>
-          <ol>N300 on every new customer your order for,</ol>
-          <ol>N100 when they order product above N1000,</ol>
-          <ol>N50 when they order products below #1000</ol>
+          <div className="box">
+            <Image src='/bullet.png'  width={20}  height={26} alt='bullet'/>
+            <p>N300 on every new customer your order for,</p>
+          </div>
+
+          <div className="box">
+            <Image src='/bullet.png'  width={20}  height={26} alt='bullet'/>
+            <ol>N100 when they order product above N1000,</ol>
+          </div>
+
+          <div className="box">
+            <Image src='/bullet.png'  width={20}  height={26} alt='bullet'/>
+            <ol>N50 when they order products below #1000</ol>
+          </div>
 
           <input type="button" value="Start Earning" />
         </div>
 
-        <div className="mobileApp">
+        <div className={styles.mobileApp}>
           <h1>Everyday Protein, Delivered</h1>
           <p>Order meat on sendme mobile app</p>
 
-          <Image src='/google-play.png' width={142}  height={200} alt='google play'/>
-          <Image src='/google-play.png' width={142}  height={200} alt='google play'/>
-          <Image src='/google-play.png' width={142}  height={200} alt='google play'/>
+          <div className={ styles.store }>
+            <Image src='/app-store.png' width={142}  height={41} alt='app store'/>
+            <Image src='/google-play.png' width={142}  height={41} alt='google play'/>
+          </div>
+
+          <div>
+            <Image src='/app homescreen.png' width={142}  height={41} alt='app store'/>
+            <Image src='/APP store sendme.png' width={142}  height={41} alt='google play'/>
+            <Image src='/cart.png' width={142}  height={41} alt='google play'/>
+          </div>
         </div>
 
-        <div className="FAQ">
-          <h1>You Asked, We Answered.</h1>
-          <p>Frequntly asked questions from our customers</p>
+        <div className={ styles.FAQ }>
+          <div className={ styles.row }>
+            <div className="box">
+              <Image src='/FAQ.png' width={50}  height={50} alt='google play'/>
+            </div>
+            <div className="box">
+              <h1>You Asked, We Answered.</h1>
+              <p>Frequntly asked questions from our customers</p>
+            </div>
+          </div>
 
           <Accordion>
             <AccordionItem>
               <h2>
                 <AccordionButton>
                   <Box flex='1' textAlign='left'>
-                    Section 1 title
+                    Who Can Order meat on sendme ?
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
@@ -130,7 +156,7 @@ export default function Home() {
               <h2>
                 <AccordionButton>
                   <Box flex='1' textAlign='left'>
-                    Section 2 title
+                    What’s the standard delivery time for a meat ?
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
@@ -147,24 +173,7 @@ export default function Home() {
               <h2>
                 <AccordionButton>
                   <Box flex='1' textAlign='left'>
-                    Section 2 title
-                  </Box>
-                  <AccordionIcon />
-                </AccordionButton>
-              </h2>
-              <AccordionPanel pb={4}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-              </AccordionPanel>
-            </AccordionItem>
-
-            <AccordionItem>
-              <h2>
-                <AccordionButton>
-                  <Box flex='1' textAlign='left'>
-                    Section 2 title
+                    How do I order meat ?
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>

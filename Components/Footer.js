@@ -1,12 +1,13 @@
 import Image from "next/image";
+import styles from '../styles/Footer.module.css';
 
 
 const Footer = () => {
   return (
-    <footer>
-      <Image src='/google-play.png' width={142}  height={200} alt='google play'/>
+    <div className={ styles.footer }>
+      <Image src='/sendme-logo.png' width={142}  height={200} alt='google play'/>
 
-      <div>
+      <div className={ styles.contactUs}>
         <h2>Contact Us</h2>
         <p>02, Olupitan Street, Ikolaba, 
         Ibadan.</p>
@@ -14,42 +15,42 @@ const Footer = () => {
         <p>help@sendme.ng</p>
       </div>
 
-      <div>
+      <div className={ styles.company}>
         <h2>Company</h2>
         <a href="">Career</a>
         <a href="">Contact Us</a>
       </div>
 
-      <div>
+      <div className={ styles.earnWithSendme}>
         <h2>Products</h2>
         <a href="">Earn with Sendme</a>
         <a href="">Order on Sendme</a>
         <a href="">Sendme for Business</a>
       </div>
 
-      <div>
+      <div className={ styles.getApp}>
         <p>Get the app</p>
         <Image src='/google-play.png' width={142}  height={200} alt='google play'/>
       </div>
 
-      <div>
-        <a href=""><Image src='/google-play.png' width={142}  height={200} alt='google play'/></a>
-        <a href=""><Image src='/google-play.png' width={142}  height={200} alt='google play'/></a>
+      <div  className={ styles.socialMedia}>
+        <a href="http://linkedin.com"><Image src='/google-play.png' width={142}  height={200} alt='LinkedIn'/></a>
+        <a href="http://facebook.com"><Image src='/google-play.png' width={142}  height={200} alt='facebook'/></a>
         <a href=""><Image src='/google-play.png' width={142}  height={200} alt='google play'/></a>
       </div>
 
-      <div>
+      <div className={ styles.subscribe}>
         <h2>Subscribe</h2>
         <input type="email" name="Email address" id="" placeholder="Email address" /><Image src='/google-play.png' width={142}  height={200} alt='google play'/>
 
         <p>Subscribe to our news;etter to get the latest updates on our products and offerings</p>
       </div>
 
-      <div>
+      <div  className={ styles.end}>
         <a href="">Terms</a>
         <a href="">Privacy</a>
       </div>
-    </footer>
+    </div>
    );
 }
  
