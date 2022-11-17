@@ -1,5 +1,85 @@
-.content {
-  padding: 0 5rem;
-  background-color: aqua;
+
+
+/* Header */
+.header{
+  padding: 0 1rem;
+  margin-bottom: 4rem;
+}
+
+.mainHeader{
+  font-family: Lato;
+  /* font-size: 50px; */
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: Mulish;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.header p{
+  font-family: Mulish;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.header input{
+  border: none;
+  border-radius:  0.4375rem;
+  padding:  13.278px 11.8027px;
+  background-color: red;
+  color: white;
+  font-size: 11.8px;
+}
+.red{
+  color: red;
+}
+.grey{
+  color: grey;
+}
+.black{
+  color: black;
+}
+.store{
+  display: flex;
+}
+
+
+/* Coming Soon */
+.comingSoon{
+  margin-bottom: 4rem;
+}
+
+.animalProtein{
+  padding: 0 2rem;
+  margin-bottom: 4rem;
+}
+.products{
+  columns: 2;
+}
+.box{
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+  margin-bottom: 3rem;
+  font-size: 12px;
+}
+
+/* B2B */
+.B2B{
+  padding: 0 1rem;
+}
+.businesses{
+  display: flex;
+}
+
+/* earnWithSendme */
+.earnWithSendme{
+  padding: 0 1rem;
 }
 

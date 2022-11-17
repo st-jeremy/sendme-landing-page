@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AiOutlineMenu from 'react-icons/ai';
 
 import {
   Drawer,
@@ -12,11 +13,32 @@ import {
   Radio,
   Stack,
   Button,
-  useDisclosure
+  useDisclosure,
+  IconButton
 } from '@chakra-ui/react';
+
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+  ChevronDownIcon,
+  HamburgerIcon,
+  ExternalLinkIcon,
+  RepeatIcon,
+  EditIcon,
+  AddIcon
+} from '@chakra-ui/react'
+
+
 import React from "react";
 
 const Navbar = () => {
+
   function PlacementExample() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [placement, setPlacement] = React.useState('right')
@@ -26,9 +48,11 @@ const Navbar = () => {
         <RadioGroup defaultValue={placement} onChange={setPlacement}>
           
         </RadioGroup>
-        <Button colorScheme='blue' onClick={onOpen}>
-          Open
+        <Button colorScheme='blue' onClick={onOpen} >
+        Shade
         </Button>
+        
+
         <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
           <DrawerOverlay />
           <DrawerContent>
