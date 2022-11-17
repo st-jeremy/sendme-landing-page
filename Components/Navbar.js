@@ -1,56 +1,56 @@
 import Image from "next/image";
 
+import {
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  RadioGroup,
+  Radio,
+  Stack,
+  Button,
+  useDisclosure
+} from '@chakra-ui/react';
+import React from "react";
+
 const Navbar = () => {
+  function PlacementExample() {
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const [placement, setPlacement] = React.useState('right')
+  
+    return (
+      <>
+        <RadioGroup defaultValue={placement} onChange={setPlacement}>
+          
+        </RadioGroup>
+        <Button colorScheme='blue' onClick={onOpen}>
+          Open
+        </Button>
+        <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
+          <DrawerOverlay />
+          <DrawerContent>
+            <DrawerHeader borderBottomWidth='1px'>Basic Drawer</DrawerHeader>
+            <DrawerBody>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+            </DrawerBody>
+          </DrawerContent>
+        </Drawer>
+      </>
+    )
+  }
 
   return (
     <>
-      <div>
-        <Image src='/google-play.png' width={142}  height={200} alt='google play'/>
+      <h1>Sendme</h1>
 
-        <div>
-          <h2>Contact Us</h2>
-          <p>02, Olupitan Street, Ikolaba, 
-          Ibadan.</p>
-          <p>0815 950 6999</p>
-          <p>help@sendme.ng</p>
-        </div>
+      <PlacementExample />
 
-        <div>
-          <h2>Company</h2>
-          <a href="">Career</a>
-          <a href="">Contact Us</a>
-        </div>
-
-        <div>
-          <h2>Products</h2>
-          <a href="">Earn with Sendme</a>
-          <a href="">Order on Sendme</a>
-          <a href="">Sendme for Business</a>
-        </div>
-
-        <div>
-          <p>Get the app</p>
-          <Image src='/google-play.png' width={142}  height={200} alt='google play'/>
-        </div>
-
-        <div>
-          <a href=""><Image src='/google-play.png' width={142}  height={200} alt='google play'/></a>
-          <a href=""><Image src='/google-play.png' width={142}  height={200} alt='google play'/></a>
-          <a href=""><Image src='/google-play.png' width={142}  height={200} alt='google play'/></a>
-        </div>
-
-        <div>
-          <h2>Subscribe</h2>
-          <input type="email" name="Email address" id="" placeholder="Email address" /><Image src='/google-play.png' width={142}  height={200} alt='google play'/>
-
-          <p>Subscribe to our news;etter to get the latest updates on our products and offerings</p>
-        </div>
-
-        <div>
-          <a href="">Terms</a>
-          <a href="">Privacy</a>
-        </div>
-      </div>
+    
     </>
   );
 }

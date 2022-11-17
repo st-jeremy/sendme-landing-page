@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
 
 import styles from '../styles/Home.module.css';
 
@@ -12,40 +11,35 @@ import {
   AccordionIcon,
   Box
 } from '@chakra-ui/react';
-import Navbar from '../Components/Navbar';
-import Footer from '../Components/Footer';
 
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Head>
+        <title>Sendme</title>
+        <meta name="description" content="Sendme Landing Page" />
+        <link rel="icon" href="/public/sendme-logo.png" />
+      </Head>
 
-      <div className={styles.container}>
-
-        <Head>
-          <title>Sendme</title>
-          <meta name="description" content="Sendme Landing Page" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-
+      <div className={ styles.content}>
         <div className="header">
           <h1>Get The <span>Best meat</span>  in <span>30</span>Mins</h1>
           <p>Focus on the things that matter while we handle your animal protein needs by giving you premium quality meat at the best prices.
           </p>
           <input type="button" value="Order meat on web now" />
           <p>or get the app</p>
-          <Image src='/app-store.png' width={142}  height={200} alt='app store'/>
-          <Image src='/google-play.png' width={142}  height={200} alt='google play'/>
+          <Image src='/app-store.svg' width={142}  height={200} alt='app store'/>
+          <Image src='/google-play.svg' width={142}  height={200} alt='google play'/>
         </div>
 
         <div className='animalProtein'>
           <h1>Buy Animal Proteins</h1>
           <p>All your favorite meat in one stop </p>
-          <Image src='/google-play.png' width={142}  height={200} alt='google play'/>
-          <Image src='/google-play.png' width={142}  height={200} alt='google play'/>
-          <Image src='/google-play.png' width={142}  height={200} alt='google play'/>
-          <Image src='/google-play.png' width={142}  height={200} alt='google play'/>
+          <Image src='/app-store.svg' width={142}  height={200} alt='app store'/>
+          <Image src='/google-play.svg' width={142}  height={200} alt='google play'/>
+          <Image src='/app-store.svg' width={142}  height={200} alt='app store'/>
+          <Image src='/google-play.svg' width={142}  height={200} alt='google play'/>
         </div>
 
         <div className="B2B">
@@ -156,8 +150,7 @@ export default function Home() {
           </Accordion>
         </div>
       </div>
-
-      <Footer />
+      
     </>
   )
 }
