@@ -16,7 +16,7 @@ const Footer = () => {
 
       <div className={ styles.company}>
         <h2>Company</h2>
-        <a href="">Career</a>
+        <a href="">Career</a> <br />
         <a href="">Contact Us</a>
       </div>
 
@@ -37,9 +37,9 @@ const Footer = () => {
       </div>
 
       <div  className={ styles.socialMedia}>
-        <a href="http://linkedin.com"><Image src='/linkedin.png' width={30}  height={30} alt='LinkedIn'/></a>
-        <a href="http://facebook.com"><Image src='/facebook.png' width={30}  height={30} alt='facebook'/></a>
-        <a href="http://twitter.com"><Image src='/twitter.png' width={30}  height={30} alt='twitter'/></a>
+        <a href="http://linkedin.com" ><Image src='/linkedin.png' width={30}  height={30} className={ styles.social } alt='LinkedIn'/></a>
+        <a href="http://facebook.com"  className={ styles.social } ><Image src='/facebook.png' width={30}  height={30} alt='facebook'/></a>
+        <a href="http://twitter.com"  className={ styles.social } ><Image src='/twitter.png' width={30}  height={30} alt='twitter'/></a>
       </div>
 
       <div className={ styles.subscribe}>

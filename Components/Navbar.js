@@ -19,6 +19,7 @@ import {
 } from '@chakra-ui/react';
 
 import React from "react";
+import { isWhiteSpaceLike } from "typescript";
 
 const Navbar = () => {
 
@@ -26,13 +27,21 @@ const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [placement, setPlacement] = React.useState('right')
 
+    const menuStyle = {
+      position: 'absolute',
+      right: 0,
+      top: 0,
+      color: 'isWhiteSpaceLike',
+      backgroundColor: 'white'
+    }
+
   
     return (
       <>
         <RadioGroup defaultValue={placement} onChange={setPlacement}>
           
         </RadioGroup>
-        <Button onClick={onOpen} left>
+        <Button onClick={onOpen} left style={ menuStyle }>
           <Image src='/menu.png' width={30}  height={30} alt='sendme logo'/>
         </Button>
         
@@ -56,10 +65,12 @@ const Navbar = () => {
     )
   }
 
+  
+
   return (
 
     <div className={ styles.navbar }>
-      <Image src='/sendme-logo.png' width={70}  height={29} alt='sendme logo'/>
+      <Image src='/sendme-logo.png' width={70}  height={29} className={ styles.menu } alt='sendme logo'/>
       <PlacementExample  />
     </div>
 
