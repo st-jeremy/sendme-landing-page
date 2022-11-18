@@ -1,17 +1,30 @@
 import Image from "next/image";
 import styles from '../styles/Footer.module.css';
-
+import { FaInstagramSquare } from 'react-icons/fa';
+import { IoCall } from 'react-icons/io';
+import { BiPhoneCall } from 'react-icons/bi';
+import { MdOutlineMail } from 'react-icons/md';
 
 const Footer = () => {
   return (
     <div className={ styles.footer }>
-      <Image src='/sendme-logo.png' width={142}  height={200} alt='google play'/>
+      <Image src='/sendme-logo.png' width={142}  height={200} className={ styles.logo} alt='google play'/>
 
       <div className={ styles.contactUs}>
         <h2>Contact Us</h2>
         <p>02, Olupitan Street, Ikolaba, Ibadan.</p>
-        <p>0815 950 6999</p>
-        <p>help@sendme.ng</p>
+        <p>
+          <BiPhoneCall style={{
+          display: 'inline-block',
+          }} /> &nbsp;
+          0815 950 6999
+        </p>
+        <p>
+          <MdOutlineMail style={{
+          display: 'inline-block'
+          }} /> &nbsp;
+          help@sendme.ng
+        </p>
       </div>
 
       <div className={ styles.company}>
@@ -28,23 +41,25 @@ const Footer = () => {
       </div>
 
       <div className={ styles.getApp}>
-        <p>Get the app</p>
+        <p>Get the App:</p>
+        
         <div className={ styles.store }>
-          <Image src='/app-store.png' width={142}  height={200} alt='app store'/>
-          <Image src='/google-play.png' width={142}  height={200} alt='google play'/>
+          <Image src='/app-store-white.png' width={140}  height={130} alt='app store'/>
+          <Image src='/google-play-white.png' width={140}  height={130} alt='google play'/>
         </div>
 
       </div>
 
       <div  className={ styles.socialMedia}>
-        <a href="http://linkedin.com" ><Image src='/linkedin.png' width={30}  height={30} className={ styles.social } alt='LinkedIn'/></a>
-        <a href="http://facebook.com"  className={ styles.social } ><Image src='/facebook.png' width={30}  height={30} alt='facebook'/></a>
-        <a href="http://twitter.com"  className={ styles.social } ><Image src='/twitter.png' width={30}  height={30} alt='twitter'/></a>
+        <a href="http://instagram.com" className={ styles.social } ><Image src='/instagram.png' width={20}  height={20} alt='instagram'/></a>
+        <a href="http://facebook.com"  className={ styles.social } ><Image src='/facebook.png' width={20}  height={20} alt='facebook'/></a>
+        <a href="http://twitter.com"  className={ styles.social } ><Image src='/twitter.png' width={20}  height={20} alt='twitter'/></a>
       </div>
 
       <div className={ styles.subscribe}>
         <h2>Subscribe</h2>
-        <input type="email" name="  &nsbsp Email address" id="email" placeholder="Email address" />
+        <input type="email" name="  &nbsp Email address" id="email" placeholder="Email address" />
+        
 
         <p>Subscribe to our newsletter to get the latest updates on our products and offerings</p>
       </div>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from '../styles/Navbar.module.css';
 import Link from 'next/link';
+import { IoMdArrowDropdownCircle } from 'react-icons/io'
 
 import {
   Drawer,
@@ -30,9 +31,11 @@ const Navbar = () => {
     const menuStyle = {
       position: 'absolute',
       right: 0,
-      top: 0,
+      top: 15,
       color: 'isWhiteSpaceLike',
-      backgroundColor: 'white'
+      backgroundColor: 'white',
+      height: '1.5rem',
+      width: 'fit-content'
     }
 
   
@@ -54,10 +57,33 @@ const Navbar = () => {
               <Image src='/sendme-logo.png' width={70}  height={29} alt='sendme logo'/>
             </DrawerHeader>
 
-            <DrawerBody width='50%' >
-              <Link href="/">Our Products</Link> <br />
-              <Link href="/">For Businesses</Link> <br />
-              <Link href="/">Our Culture</Link>
+            <DrawerBody width='100%' styles={ {
+              marginBottom: '1rem',
+              fontWeight: 500
+            }}>
+              <Link href="/WhoWeAre">
+                Our Products 
+                <IoMdArrowDropdownCircle style={{
+                  display: 'inline-block',
+                  paddingTop: '.2rem'
+                  }} />
+              </Link> <br />
+
+              <Link href="/">
+                For Businesses 
+                <IoMdArrowDropdownCircle style={{
+                display: 'inline-block',
+                paddingTop: '.2rem'
+                }} />
+              </Link> <br />
+
+              <Link href="/Career">
+                Our Culture
+                <IoMdArrowDropdownCircle style={{
+                display: 'inline-block',
+                paddingTop: '.2rem'
+                }} />
+              </Link>
             </DrawerBody>
           </DrawerContent>
         </Drawer>

@@ -113,19 +113,20 @@ export default function Home() {
           <p>You can make money just by buying sendme products on behalf of your friends, colleagues, or neighbors.</p>
 
           <p>You can earn:</p>
-          <div className="box">
-            <Image src='/bullet.png'  width={20}  height={26} alt='bullet'/>
-            <p><b>N300</b> on every new customer your order for,</p>
+
+          <div className={styles.box}>
+            <Image src='/bullet.png'  width={20}  height={26} className={styles.boxImg}  alt='bullet'/>
+            <ol><b>N300</b> on every new customer your order for</ol>
           </div>
 
-          <div className="box">
-            <Image src='/bullet.png'  width={20}  height={26} alt='bullet'/>
-            <p><b>N100</b> when they order product above N1000</p>
+          <div className={styles.box}>
+            <Image src='/bullet.png'  width={20}  height={26} className={styles.boxImg} alt='bullet'/>
+            <ol><b>N100</b> when they order product above N1000</ol>
           </div>
 
-          <div className="box">
-            <Image src='/bullet.png'  width={20}  height={26} alt='bullet'/>
-            <p><b>N50</b>when they order products below #1000</p>
+          <div className={styles.box}>
+            <Image src='/bullet.png'  width={20}  height={1} className={styles.boxImg} alt='bullet'/>
+            <ol><b>N50</b> when they order products below #1000</ol>
           </div>
 
           <button>Start Earning</button>
@@ -141,7 +142,7 @@ export default function Home() {
           </div>
 
           <div>
-            <Image src='/mobileApp.png' width={ 500 } height={ 500 } alt='mobile app'/>
+            <Image src='/mobileScreen.png' width={ 500 } height={ 500 } alt='mobile app'/>
           </div>
         </div>
 
@@ -157,10 +158,17 @@ export default function Home() {
           </div>
 
           <Accordion>
-            <AccordionItem>
+            <AccordionItem style={{
+              borderTop: 'none',
+              fontSize: '10pt'
+            }}>
               <h2>
-                <AccordionButton>
-                  <Box flex='1' textAlign='left'>
+                <AccordionButton >
+                  <Box flex='1' textAlign='left' style={{
+                    fontSize: '12pt',
+                    marginLeft: '-1rem',
+                    padding: '1rem 0', 
+                  }}>
                     Who Can Order meat on sendme ?
                   </Box>
                   <AccordionIcon />
@@ -177,8 +185,12 @@ export default function Home() {
             <AccordionItem>
               <h2>
                 <AccordionButton>
-                  <Box flex='1' textAlign='left'>
-                    What’s the standard delivery time for a meat ?
+                  <Box flex='1' textAlign='left' style={{
+                    fontSize: '12pt',
+                    marginLeft: '-1rem',
+                    padding: '1rem 0'
+                  }}>
+                    What’s the standard delivery time <br /> for a meat ?
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
@@ -194,7 +206,11 @@ export default function Home() {
             <AccordionItem>
               <h2>
                 <AccordionButton>
-                  <Box flex='1' textAlign='left'>
+                  <Box flex='1' textAlign='left'  style={{
+                    fontSize: '12pt',
+                    marginLeft: '-1rem',
+                    padding: '1rem 0'
+                  }}>
                     How do I order meat ?
                   </Box>
                   <AccordionIcon />

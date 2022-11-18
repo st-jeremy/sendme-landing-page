@@ -1,0 +1,18 @@
+.whoWeAre{
+  margin-top: 2rem;
+  font-family: Mulish;
+}
+.mainHeading{
+  padding: 3rem 5% 1rem;
+  font-size: 35pt;
+  font-weight: 800;
+}
+.subHeading{
+  padding: .5rem 5%;
+  font-size: 25pt;
+  font-weight: 800;
+}
+.para{
+  padding: .5rem 5%;
+  font-size: 12pt;
+}
