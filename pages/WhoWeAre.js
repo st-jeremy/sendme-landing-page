@@ -3,12 +3,12 @@ import Image from 'next/image';
 
 const WhoWeAre = () => {
   return (
-    <>
-      <div>
-        <Image src='/sendme-logo.png' width={142}  height={200} className={ styles.logo} alt='google play'/>
+    <div className={ styles.whoWeAre }>
+      <div className={ styles.col }>
+        <Image src='/sendme-logo.png' width={500}  height={200} className={ styles.logo } alt='google play'/>
       </div>
 
-      <div className={ styles.whoWeAre }>
+      <div className={ styles.col }>
         <div className={ styles.box }>
           <h1 className={ styles.mainHeading }>Who We Are</h1>
           <p className={ styles.para }>For us, our work begins where others see a “finish line”.
@@ -28,12 +28,12 @@ const WhoWeAre = () => {
         <div className={ styles.box }>
           <h2 className={ styles.subHeading }>Our Vision</h2>
           <p className={ styles.para }>
-            is to build a world-class team committed to achieving and surpassing excellence in the food value chain by leveraging on technology.
+            To build a world-class team committed to achieving and surpassing excellence in the food value chain by leveraging on technology.
           </p>
         </div>
 
       </div>
-    </>
+    </div>
   );
 }
  

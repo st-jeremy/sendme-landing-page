@@ -1,7 +1,9 @@
 import Image from "next/image";
 import styles from '../styles/Navbar.module.css';
 import Link from 'next/link';
-import { IoMdArrowDropdownCircle } from 'react-icons/io'
+import { IoMdArrowDropdownCircle } from 'react-icons/io';
+import { AiOutlineArrowRight } from 'react-icons/ai';
+
 
 import {
   Drawer,
@@ -19,8 +21,21 @@ import {
   IconButton
 } from '@chakra-ui/react';
 
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider
+} from '@chakra-ui/react';
+
+import { menuAnatomy } from '@chakra-ui/anatomy'
+import { createMultiStyleConfigHelpers, defineStyle } from '@chakra-ui/react'
+
 import React from "react";
-import { isWhiteSpaceLike } from "typescript";
 
 const Navbar = () => {
 
@@ -38,7 +53,6 @@ const Navbar = () => {
       width: 'fit-content'
     }
 
-  
     return (
       <>
         <RadioGroup defaultValue={placement} onChange={setPlacement}>
@@ -61,6 +75,7 @@ const Navbar = () => {
               marginBottom: '1rem',
               fontWeight: 500
             }}>
+
               <Link href="/WhoWeAre">
                 Our Products 
                 <IoMdArrowDropdownCircle style={{
@@ -84,20 +99,186 @@ const Navbar = () => {
                 paddingTop: '.2rem'
                 }} />
               </Link>
+
             </DrawerBody>
           </DrawerContent>
         </Drawer>
       </>
     )
-  }
+  };
 
-  
 
   return (
-
     <div className={ styles.navbar }>
       <Image src='/sendme-logo.png' width={70}  height={29} className={ styles.menu } alt='sendme logo'/>
+
       <PlacementExample  />
+
+      <Menu>
+        <MenuButton as={Button}>
+          Our Products 
+          <IoMdArrowDropdownCircle style={{
+            display: 'inline-block',
+            paddingTop: '.2rem'
+            }} />
+        </MenuButton>
+
+        <MenuList>
+          <MenuGroup title='Our Products'>
+            <MenuDivider style={{
+              width: '89%',
+              margin: 'auto',
+              borderTop: '2px solid #f7f7f7'
+              }}
+            />
+
+            <MenuItem style={{
+              marginTop: '1rem',
+              paddingLeft: '2rem'
+              }}
+            >
+              <Image
+              boxSize='2rem'
+              borderRadius='full'
+              src='/cow.png'
+              alt='Simon the pensive'
+              mr='12px'
+              width={ 30 }
+              height={ 30 }
+              /> &nbsp; 
+              Cow Meat 
+              <AiOutlineArrowRight style={{
+                display: 'inline-block',
+                paddingTop: '.2rem'
+                }} 
+              /> 
+              <span>Fluffybuns the Destroyer</span>
+            </MenuItem>
+
+            <MenuItem style={{
+              marginTop: '1rem',
+              paddingLeft: '2.5rem'
+              }}
+            >
+              <Image
+                boxSize='2rem'
+                borderRadius='full'
+                src='/cow.png'
+                alt='Simon the pensive'
+                mr='12px'
+                width={ 30 }
+                height={ 30 }
+              /> &nbsp;
+              Goat Meat 
+              <AiOutlineArrowRight style={{
+                display: 'inline-block',
+                paddingTop: '.2rem'
+                }} 
+              />
+            </MenuItem>
+
+            <MenuItem style={{
+              marginTop: '1rem',
+              paddingLeft: '2.5rem'
+              }}
+            >
+              <Image
+                boxSize='2rem'
+                borderRadius='full'
+                src='/cow.png'
+                alt='Simon the pensive'
+                mr='12px'
+                width={ 30 }
+                height={ 30 }
+              /> &nbsp;
+              Chicken 
+              <AiOutlineArrowRight style={{
+                display: 'inline-block',
+                paddingTop: '.2rem'
+                }} 
+              />
+            </MenuItem >
+
+            <MenuItem style={{
+              marginTop: '1rem',
+              paddingLeft: '2rem'
+              }}
+            >
+              <Image
+                boxSize='2rem'
+                borderRadius='full'
+                src='/cow.png'
+                alt='Simon the pensive'
+                mr='12px'
+                width={ 30 }
+                height={ 30 }
+              /> &nbsp;
+              Fish 
+              <AiOutlineArrowRight style={{
+                display: 'inline-block',
+                paddingTop: '.2rem'
+                }} 
+              />
+            </MenuItem>
+
+            <MenuDivider />
+            <MenuItem>Download our Mobile App</MenuItem>
+            <Image
+              boxSize='2rem'
+              src='/app-store.png'
+              alt='app-store'
+              mr='12px'
+              width={ 150 }
+              height={ 90 }
+            />
+
+            <Image
+              boxSize='2rem'
+              src='/google-play.png'
+              alt='google-play'
+              mr='12px'
+              width={ 150 }
+              height={ 90 }
+            />
+          </MenuGroup>
+
+        </MenuList>
+      </Menu>
+
+      <Menu>
+        <MenuButton as={Button}>
+          Our Products 
+          <IoMdArrowDropdownCircle style={{
+            display: 'inline-block',
+            paddingTop: '.2rem'
+            }} />
+        </MenuButton>
+        <MenuList>
+          <MenuItem>Download</MenuItem>
+          <MenuItem>Create a Copy</MenuItem>
+          <MenuItem>Mark as Draft</MenuItem>
+          <MenuItem>Delete</MenuItem>
+          <MenuItem>Attend a Workshop</MenuItem>
+        </MenuList>
+      </Menu>
+
+      <Menu>
+        <MenuButton as={Button}>
+          Our Products 
+          <IoMdArrowDropdownCircle style={{
+            display: 'inline-block',
+            paddingTop: '.2rem'
+            }} />
+        </MenuButton>
+        <MenuList>
+          <MenuItem>Download</MenuItem>
+          <MenuItem>Create a Copy</MenuItem>
+          <MenuItem>Mark as Draft</MenuItem>
+          <MenuItem>Delete</MenuItem>
+          <MenuItem>Attend a Workshop</MenuItem>
+        </MenuList>
+      </Menu>
+
     </div>
 
   );
