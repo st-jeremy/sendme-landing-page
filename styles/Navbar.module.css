@@ -15,3 +15,7 @@
 
 }
 
+.menuItem:hover{
+  width: 90%;
+  background-color: blueviolet;
+}
