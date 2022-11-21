@@ -100,8 +100,14 @@ const Navbar = () => {
           < BiMenu />
         </Button>
 
-        <Drawer placement={placement} onClose={onClose} isOpen={isOpen} size={ 50 }>
+        <Drawer 
+          placement='right'
+          onClose={onClose} 
+          isOpen={isOpen} 
+        >
+
           <DrawerOverlay />
+
           <DrawerContent>
             <DrawerCloseButton />
             <DrawerHeader borderBottomWidth='1px'>
