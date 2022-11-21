@@ -155,17 +155,23 @@ export default function Home() {
         </div>
 
         <div className={styles.mobileApp}>
-          <h2>Make The Best Meals With the Best Meat</h2>
-          <p>Order meat on sendme mobile app</p>
-
-          <div className={ styles.store }>
-            <Image src='/app-store.png' width={142}  height={41} alt='app store'/>
-            <Image src='/google-play.png' width={142}  height={41} alt='google play'/>
+          <div className={styles.box}>
+            <h2>Make The Best Meals With the Best Meat</h2>
+            <p>Order meat on sendme mobile app</p>
+          
+            <div className={ styles.store }>
+              <Image src='/app-store.png' width={142}  height={41} alt='app store'/>
+              <Image src='/google-play.png' width={142}  height={41} alt='google play'/>
+            </div>
           </div>
 
           <div>
             <Image src='/mobileScreen.png' width={ 500 } height={ 500 } className={ styles.mobileScreen }alt='mobile screen'/>
           </div>
+        </div>
+
+        <div  className={styles.freshchat}>
+          <Image src='/freshchat-icon.png'  width={100} height={41}  className={ styles.freshchatIcon }  alt='freshchat icon'/>
         </div>
 
         <div className={ styles.FAQ }>

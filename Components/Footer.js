@@ -14,36 +14,36 @@ const Footer = () => {
     <div className={ styles.footer }>
       <Image src='/sendme-logo.png' width={142}  height={200} className={ styles.logo} alt='google play'/>
 
-      <div></div>
+      <div className={ styles.row }>
+        <div className={ styles.contactUs}>
+          <h2>Contact Us</h2>
+          <p>02, Olupitan Street, Ikolaba, Ibadan.</p>
+          <p>
+            <BiPhoneCall style={{
+            display: 'inline-block',
+            }} /> &nbsp;
+            0815 950 6999
+          </p>
+          <p>
+            <MdOutlineMail style={{
+            display: 'inline-block'
+            }} /> &nbsp;
+            help@sendme.ng
+          </p>
+        </div>
 
-      <div className={ styles.contactUs}>
-        <h2>Contact Us</h2>
-        <p>02, Olupitan Street, Ikolaba, Ibadan.</p>
-        <p>
-          <BiPhoneCall style={{
-          display: 'inline-block',
-          }} /> &nbsp;
-          0815 950 6999
-        </p>
-        <p>
-          <MdOutlineMail style={{
-          display: 'inline-block'
-          }} /> &nbsp;
-          help@sendme.ng
-        </p>
-      </div>
+        <div className={ styles.company}>
+          <h2>Company</h2>
+          <a href="">Career</a> <br />
+          <a href="">Contact Us</a>
+        </div>
 
-      <div className={ styles.company}>
-        <h2>Company</h2>
-        <a href="">Career</a> <br />
-        <a href="">Contact Us</a>
-      </div>
-
-      <div className={ styles.earnWithSendme}>
-        <h2>Products</h2>
-        <a href="">Earn with Sendme</a> <br />
-        <a href="">Order on Sendme</a> <br />
-        <a href="">Sendme for Business</a>
+        <div className={ styles.earnWithSendme}>
+          <h2>Products</h2>
+          <a href="">Earn with Sendme</a> <br />
+          <a href="">Order on Sendme</a> <br />
+          <a href="">Sendme for Business</a>
+        </div>
       </div>
 
       <div className={ styles.getApp}>

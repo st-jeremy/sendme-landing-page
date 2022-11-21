@@ -186,6 +186,14 @@
   margin-bottom: 1rem;
 }
 
+/* freshchat */
+.freshchat{
+  /* display: flex; */
+  position: fixed;
+  /* z-index: 1000; */
+}
+
+
 /* FAQ */
 .FAQ{
   background-color: #1F1F1F;
@@ -313,10 +321,10 @@
   .mobileApp{
     padding: 5%;
   }
-  .mobileApp h2{
+  .mobileApp .box h2{
     font-size: 30pt;
   }
-  .mobileApp p{
+  .mobileApp .box p{
     font-size: 17pt;
   }
   .mobileScreen{
@@ -412,7 +420,43 @@
   }
   .ewsImg{
     border-radius: 50px;
+    max-height: 30rem;
+    max-width: 30rem;
   }
 
-  
+  /* mobileApp */
+  .mobileApp{
+    height: 25.3rem;
+    border-radius: 30px;
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+  }
+  .mobileApp .box{
+    width: 40%;
+    position: absolute;
+    right: 2.5rem;
+    text-align: left;
+  }
+  .mobileScreen{
+    margin: 0%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .mobileApp{
+   width: 65rem;
+  }
+  .mobileApp .box{
+    width: 40%;
+    position: absolute;
+    right: 8rem;
+  }
+}
+@media only screen and (min-width: 1523px) {
+  .mobileApp .box{
+    width: 35%;
+    right: 12rem;
+  }
 }

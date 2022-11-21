@@ -94,9 +94,66 @@
 
 @media only screen and (min-width: 768px) {
   .footer{
-    font-size: 14pt;
+    font-size: 12pt;
   }
   .footer h2{
-    font-size: 19pt;
+    font-size: 17pt;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .footer{
+    padding: 5rem 5.5rem 6rem;
+  }
+  .row{
+    display: flex;
+    width: 60%;
+  }
+  .contactUs{
+    margin-right: 1rem;
+    margin-top: 2rem;
+    width: 12rem;
+  }
+  .company{
+    margin-right: 3rem;
+  }
+  .subscribe{
+    position: absolute;
+    right: 3%;
+    width: 20rem;
+    margin-top: -23rem;
+    background-color: rgb(48, 47, 47);
+    padding: 1.5rem 2.5rem 2.5rem;
+  }
+  .subBtn{
+    padding: 11.5px 20px 15px;
+  }
+  .getApp{
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
+  .socialMedia{
+    position: absolute;
+    right: 0;
+    margin: -6.5rem 1rem 3rem;
+  }
+  .end{
+    margin: -7rem 1rem 2rem 25rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .subscribe{
+    position: absolute;
+    right: 12%;
+  }
+  .socialMedia{
+   position: absolute;
+   right: 10%;
+  }
+  .end{
+    position: absolute;
+    right: 25.5%;
   }
 }
