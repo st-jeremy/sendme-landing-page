@@ -15,7 +15,6 @@
 .contactUs{
   margin-top: 3rem;
 }
-
 .company{
   margin-top: 2rem;
 }
@@ -41,29 +40,36 @@
   flex-direction: row;
 }
 .social{
-  border: 1px solid rgb(102, 102, 96);
+  border: 1px solid #1b1b1b;
   border-radius: 50%;
   margin-right: 1rem;
   width: fit-content
 }
+
 .subscribe{
   margin-top: 2rem;
   background-color: rgb(71, 66, 66);
-  color: white;
   padding: 1rem;
   border-radius: 5px;
 }
-#email{
-  background-color: rgb(141, 141, 152);
-  padding: 2rem;
-  border-radius: 5px;
+.subInput{
+  background-color: #d7d9e4;
+  border-radius: 5px 0px 0 5px;
+  color: black;
+  padding: 16px;
+  height:50px;
+}
+.subBtn{
+  background-color: white;
+  height: 2.5rem;
+  padding: 0px 16px 3.2px;
+  border-radius: 0px 5px 5px 0px;
 }
 .subscribe p{
   margin-top: 1rem;
   line-height: 1.2;
-  color:  #1B1B1B;
+  color:  rgb(247, 240, 240);
 }
-
 .end{
   display: flex;
   justify-content: center;
@@ -71,4 +77,26 @@
 }
 .end a{
   margin-right: 1.5rem;
+}
+
+@media only screen and (min-width: 631px) {
+  .subBtn{
+    padding: 16.5px 20px 20px;
+    /* height: fit-content; */
+  }
+}
+
+@media only screen and (min-width: 692px) {
+  .subBtn{
+    padding: 11.5px 20px 17px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer{
+    font-size: 14pt;
+  }
+  .footer h2{
+    font-size: 19pt;
+  }
 }

@@ -8,14 +8,33 @@
   width: 100%;
   top: 0%;
 }
-
 .menu{
   padding-left: 1rem;
   width: fit-content;
-
 }
-
+.menuBar{
+  display: none;
+}
 .menuItem:hover{
   width: 90%;
   background-color: blueviolet;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .navbar{
+    height: 4rem;
+    padding-left: 2%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .menuBar{
+    display: block;
+    margin: auto;
+    margin-top: 1.8rem;
+  }
+  .hamburger{
+    display: none;
+  }
 }

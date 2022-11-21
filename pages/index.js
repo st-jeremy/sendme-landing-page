@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import styles from '../styles/Home.module.css';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import { BsArrowUpRight } from 'react-icons/bs';
 
 import {
   Accordion,
@@ -25,40 +26,49 @@ export default function Home() {
 
       <div className={ styles.content }>
         <div className={ styles.header }>
-          <h1 className={ styles.mainHeading }>
-            Get The <span className={ styles.red }> <br />
-            Best Meat</span> in <span  className={ styles.grey }>30</span>Mins.
-          </h1>
-          <br />
+          <div className={ styles.col1 }>
+            <h1 className={ styles.mainHeading }>
+              Get The <span className={ styles.red }> <br />
+              Best Meat</span> in <span  className={ styles.grey }>30</span>Mins.
+            </h1>
+            
+            <br />
 
-          <p className={ styles.grey }>Focus on the things that matter while we handle your animal protein needs by giving you premium quality meat at the best prices.
-          </p>
-          <br />
+            <p className={ styles.grey }>Focus on the things that matter while we handle your animal protein needs by giving you premium quality meat at the best prices.
+            </p>
+            <br />
 
-          <button className={ styles.btn}>
-            Order meat on web now &nbsp; &nbsp;
-            <AiOutlineArrowRight style={{
-              display: 'inline-block',
-              paddingTop: '.2rem'
-              }} 
-            />
-          </button>
-          <br />
-          <br />
+            <button className={ styles.btn}>
+              Order meat on web now &nbsp; &nbsp;
+              <AiOutlineArrowRight style={{
+                display: 'inline-block',
+                paddingTop: '.3rem'
+                }} 
+              />
+            </button>
+            <br />
+            <br />
 
-          <p className={ styles.black }>or Get the app</p>
-          <div className={ styles.store }>
-            <Image src='/app-store.png' width={142}  height={41} alt='app store'/>
-            <Image src='/google-play.png' width={142}  height={41} alt='google play'/>
+            <p className={ styles.black }>or Get the app</p>
+            <div className={ styles.store }>
+              <Image src='/app-store.png' width={142}  height={41} alt='app store'/>
+              <Image src='/google-play.png' width={142}  height={41} alt='google play'/>
+            </div>
+          </div>
+
+          <div className={ styles.col2 }>
+            <Image src='/imageStack.png' width={2000}  height={41} alt='image'/>
           </div>
         </div>
 
         <div className={styles.comingSoon}>
-          <Image src='/coming-soon.png' width={700} height={51}  quality="100" alt='google play'/>
+          <Image src='/coming-soon-phone.png' width={700} height={51}  quality="100" className={styles.comingSoonPhone} alt='google play'/>
+          <Image src='/coming-soon-phone.png' width={1200} height={51}  quality="100" className={styles.comingSoonTab} alt='google play'/>
+          <Image src='/coming-soon-laptop.png' width={1940} height={51}  quality="100" className={styles.comingSoonLaptop} alt='google play'/>
         </div>
 
         <div className={styles.animalProtein}>
-          <h1>Buy Animal Proteins</h1>
+          <h2>Buy Animal Proteins</h2>
           <p>All your favorite meat in one stop </p>
 
           <div className={styles.products}>
@@ -82,11 +92,11 @@ export default function Home() {
         </div>
 
         <div className={styles.B2B}>
-          <h1>
+          <h2>
             We Also Sell <span className={ styles.red }>Meat</span> 
             <br />
             To Businesses.
-          </h1>
+          </h2>
 
           <p>We currently deliver a variety of the best animal protein to over 100 restaurants and hotels, helping them meet their business needs by creating the best meat experience for their customers and increasing their sales and profit margin.
           </p>
@@ -94,12 +104,12 @@ export default function Home() {
           <div className={styles.businesses}>
             <Image src='/spar-logo.png' width={88}  height={15} className={ styles.biz} alt='SPAR logo'/>
             <Image src='/kili-logo.png'  width={88}  height={15} className={ styles.biz} alt='Kilimanjaro logo'/>
-            <Image src='/chicken-logo.png'  width={88}  height={15} className={ styles.biz} alt='Chicken and Co logo'/>
-            <Image src='/B-logo.png'  width={88} height={15} alt='B-logo'/>
+            <Image src='/chicken-logo.png'  width={50}  height={40} className={ styles.biz} alt='Chicken and Co logo'/>
+            <Image src='/B-logo.png'  width={20} height={15}  className={ styles.biz }  alt='B-logo'/>
           </div>
           <br />
 
-          <a href="">
+          <a href="http://business.sendme.ng" className={ styles.B2BLink}>
             Order meat for your business &nbsp; &nbsp;
             <AiOutlineArrowRight  style={{
               display: 'inline-block',
@@ -109,31 +119,43 @@ export default function Home() {
         </div>
 
         <div className={styles.earnWithSendme}>
-          <h1>Would you like to Earn With <span className={ styles.red}>Sendme</span>?</h1>
-          <p>You can make money just by buying sendme products on behalf of your friends, colleagues, or neighbors.</p>
+          <div className={styles.col1}>
+            <h2>Would you like to Earn With <span className={ styles.red}>Sendme</span>?</h2>
+            <p>You can make money just by buying sendme products on behalf of your friends, colleagues, or neighbors.</p>
 
-          <p>You can earn:</p>
+            <p>You can earn:</p>
 
-          <div className={styles.box}>
-            <Image src='/bullet.png'  width={20}  height={26} className={styles.boxImg}  alt='bullet'/>
-            <ol><b>N300</b> on every new customer your order for</ol>
+            <div className={styles.box}>
+              <Image src='/bullet.png'  width={20}  height={26} className={styles.boxImg}  alt='bullet'/>
+              <ol><b>N300</b> on every new customer order;</ol>
+            </div>
+
+            <div className={styles.box}>
+              <Image src='/bullet.png'  width={20}  height={26} className={styles.boxImg} alt='bullet'/>
+              <ol><b>N100</b> when they order product above N1000; </ol>
+            </div>
+
+            <div className={styles.box}>
+              <Image src='/bullet.png'  width={20}  height={1} className={styles.boxImg} alt='bullet'/>
+              <ol><b>N50</b> when they order products below #1000.</ol>
+            </div>
+
+            <button>
+              Start Earning &nbsp;<BsArrowUpRight style={{
+                display: 'inline-block',
+                paddingTop: '.3rem'
+              }} />
+            </button>
           </div>
 
-          <div className={styles.box}>
-            <Image src='/bullet.png'  width={20}  height={26} className={styles.boxImg} alt='bullet'/>
-            <ol><b>N100</b> when they order product above N1000</ol>
+          <div  className={styles.col2}>
+            <Image src='/ewsImg.png'  width={2000} height={41}  className={ styles.ewsImg }  alt='ews image'/>
           </div>
 
-          <div className={styles.box}>
-            <Image src='/bullet.png'  width={20}  height={1} className={styles.boxImg} alt='bullet'/>
-            <ol><b>N50</b> when they order products below #1000</ol>
-          </div>
-
-          <button>Start Earning</button>
         </div>
 
         <div className={styles.mobileApp}>
-          <h1>Make The Best Meals With the Best Meat</h1>
+          <h2>Make The Best Meals With the Best Meat</h2>
           <p>Order meat on sendme mobile app</p>
 
           <div className={ styles.store }>
@@ -142,7 +164,7 @@ export default function Home() {
           </div>
 
           <div>
-            <Image src='/mobileScreen.png' width={ 500 } height={ 500 } alt='mobile app'/>
+            <Image src='/mobileScreen.png' width={ 500 } height={ 500 } className={ styles.mobileScreen }alt='mobile screen'/>
           </div>
         </div>
 
@@ -152,7 +174,7 @@ export default function Home() {
               <Image src='/FAQ.png' width={100}  height={100} alt='FAQ'/>
             </div>
             <div className={ styles.box2 }>
-              <h1>You Asked, We Answered.</h1>
+              <h2>You Asked, We Answered.</h2>
               <p>Frequently asked questions from our customers</p>
             </div>
           </div>
@@ -164,11 +186,7 @@ export default function Home() {
             }}>
               <h2>
                 <AccordionButton >
-                  <Box flex='1' textAlign='left' style={{
-                    fontSize: '12pt',
-                    marginLeft: '-1rem',
-                    padding: '1rem 0', 
-                  }}>
+                  <Box flex='1' textAlign='left' className={ styles.accBox }>
                     Who Can Order meat on sendme ?
                   </Box>
                   <AccordionIcon />
@@ -185,11 +203,7 @@ export default function Home() {
             <AccordionItem>
               <h2>
                 <AccordionButton>
-                  <Box flex='1' textAlign='left' style={{
-                    fontSize: '12pt',
-                    marginLeft: '-1rem',
-                    padding: '1rem 0'
-                  }}>
+                  <Box flex='1' textAlign='left' className={ styles.accBox }>
                     What’s the standard delivery time <br /> for a meat ?
                   </Box>
                   <AccordionIcon />
@@ -206,11 +220,7 @@ export default function Home() {
             <AccordionItem>
               <h2>
                 <AccordionButton>
-                  <Box flex='1' textAlign='left'  style={{
-                    fontSize: '12pt',
-                    marginLeft: '-1rem',
-                    padding: '1rem 0'
-                  }}>
+                  <Box flex='1' textAlign='left'  className={ styles.accBox }>
                     How do I order meat ?
                   </Box>
                   <AccordionIcon />

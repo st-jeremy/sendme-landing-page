@@ -2,13 +2,19 @@ import Image from "next/image";
 import styles from '../styles/Footer.module.css';
 import { FaInstagramSquare } from 'react-icons/fa';
 import { IoCall } from 'react-icons/io';
+import { BsInstagram } from 'react-icons/bs';
 import { BiPhoneCall } from 'react-icons/bi';
 import { MdOutlineMail } from 'react-icons/md';
+import { FaFacebook } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
+
 
 const Footer = () => {
   return (
     <div className={ styles.footer }>
       <Image src='/sendme-logo.png' width={142}  height={200} className={ styles.logo} alt='google play'/>
+
+      <div></div>
 
       <div className={ styles.contactUs}>
         <h2>Contact Us</h2>
@@ -51,17 +57,23 @@ const Footer = () => {
       </div>
 
       <div  className={ styles.socialMedia}>
-        <a href="http://instagram.com" className={ styles.social } ><Image src='/instagram.png' width={20}  height={20} alt='instagram'/></a>
-        <a href="http://facebook.com"  className={ styles.social } ><Image src='/facebook.png' width={20}  height={20} alt='facebook'/></a>
+        <a href="http://instagram.com" className={ styles.social } >
+        <BsInstagram /></a>
+        <a href="http://facebook.com"  className={ styles.social } ><FaFacebook /></a>
         <a href="http://twitter.com"  className={ styles.social } ><Image src='/twitter.png' width={20}  height={20} alt='twitter'/></a>
       </div>
 
       <div className={ styles.subscribe}>
         <h2>Subscribe</h2>
-        <input type="email" name="  &nbsp Email address" id="email" placeholder="Email address" />
-        
+        <input 
+          type="email" 
+          name="  &nbsp Email address" 
+          placeholder="&nbsp; &nbsp; Email address" 
+          className={ styles.subInput }
+        />
+        <button className={ styles.subBtn }><FaArrowRight style={{color: 'black'}}/></button>
 
-        <p>Subscribe to our newsletter to get the latest updates on our products and offerings</p>
+        <p>Subscribe to our newsletter to get the latest updates on our products and offerings.</p>
       </div>
 
       <div  className={ styles.end}>
