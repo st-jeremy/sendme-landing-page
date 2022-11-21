@@ -1,5 +1,5 @@
 .career{
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 3rem 5%;
 }
 .mainheading{
@@ -28,6 +28,9 @@
   background-color: black;
   color: white;
 }
+.box{
+  margin-bottom: 2rem;
+}
 .subHeading{
   font-size: 14pt;
   font-weight: 600;
@@ -41,11 +44,36 @@
   font-weight: 700;
 }
 
+
+@media only screen and (min-width: 1024px) {
+  .career{
+    padding-top: 7rem;
+  }
+  .career h3{
+    font-size: 19pt;
+    font-weight: 600;
+  }
+  .mainHeading{
+    font-size: 30pt;
+  }
+  .btn, .black{
+    font-size: 12pt;
+  }
+  .para{
+    font-size: 14pt;
+  }
+  
+}
+
+
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
-  .career{
-    background-color: rgb(6, 6, 6);
+  .career, .btn{
+    background-color: rgb(29, 27, 27);
     color: white;
+  }
+  .black{
+    border: 1px solid white;
   }
 
 }

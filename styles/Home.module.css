@@ -20,7 +20,6 @@
   line-height: normal;
   text-align: left;
 }
-
 .header p{
   font-family: Mulish;
   font-size: 15px;
@@ -52,6 +51,17 @@
   display: flex;
   margin: 0%;
   padding: 0%;
+}
+
+
+/* freshchat */
+.freshchatIcon{
+  position: sticky;
+  position: fixed;
+  top: 80%;
+  right: 7%;
+  z-index: 1000;
+  text-align: right;
 }
 
 
@@ -120,8 +130,8 @@
   -webkit-filter: grayscale(100%);
 }
 .businesses :hover{
-  filter: none;
-  -webkit-filter: none;
+  filter: grayscale(1%);
+  -webkit-filter: grayscale(1%);
 }
 .B2BLink{
   color: red;
@@ -193,13 +203,6 @@
   margin-bottom: 1rem;
 }
 
-/* freshchat */
-.freshchat{
-  /* display: flex; */
-  position: fixed;
-  /* z-index: 1000; */
-}
-
 
 /* FAQ */
 .FAQ{
@@ -233,6 +236,7 @@
   margin-left: -1rem;
   padding: 1rem 0;
 }
+
 
 
 
@@ -352,23 +356,27 @@
   .accBox{
     font-size: 17pt;
   }
+  .accPanel{
+    font-size: 15pt;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   /* Header */
   .header{
     display: flex;
+    padding-top: 10rem;
   }
-  .col1{
+  .header .col1{
     width: 43%;
     margin-right: 3rem;
   }
-  .col2{
+  .header .col2{
     width: 55%;
     display: block;
   }
-  .col2 img{
-    border-radius: 30px;
+  .header .col2 img{
+    border-radius: 30px 155px 155px 30px
   }
   .mainHeading{
     font-size: 66px;
@@ -432,14 +440,16 @@
     width: 50%;
   }
   .earnWithSendme .col1 .box{
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   .earnWithSendme .col2{
     width: 50%;
+    display: block;
+    margin-left: 2rem;
   }
   .ewsImg{
     border-radius: 50px;
-    max-height: 30rem;
+    max-height: 37rem;
     max-width: 30rem;
   }
 
@@ -495,5 +505,12 @@
   .earnWithSendme{
     background-color: rgb(6, 6, 6);
     color: white;
+  }
+  .comingSoon {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+  .mobileApp{
+    background-color: #bd0d0d;
   }
 }

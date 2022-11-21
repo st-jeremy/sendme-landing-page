@@ -40,7 +40,7 @@ const Career = () => {
       <br />
 
       <div className={ styles.box }>
-        <h3 className={ styles.subHeading }>Front-End Engineer</h3>
+        <h3 className={ styles.subHeading }>Back-End Engineer</h3>
         <p className={ styles.para }>Lorem ipsum amet consectetur adipisicing!</p>
 
         <button className={ styles.btn }>On-site</button>
@@ -61,7 +61,7 @@ const Career = () => {
       <br />
 
       <div className={ styles.box }>
-        <h3 className={ styles.subHeading }>Front-End Engineer</h3>
+        <h3 className={ styles.subHeading }>Quality Assurance Engineer</h3>
         <p className={ styles.para }>Lorem ipsum amet consectetur adipisicing!</p>
 
         <button className={ styles.btn }>On-site</button>

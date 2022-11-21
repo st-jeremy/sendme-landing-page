@@ -61,9 +61,14 @@ export default function Home() {
           </div>
         </div>
 
+
+        <div  className={styles.freshchat}>
+          <Image src='/freshchat-icon.png'  width={60} height={41}  className={ styles.freshchatIcon }  alt='freshchat icon'/>
+        </div>
+
         <div className={styles.comingSoon}>
           <Image src='/coming-soon-phone.png' width={700} height={51}  quality="100" className={styles.comingSoonPhone} alt='google play'/>
-          <Image src='/coming-soon-phone.png' width={1200} height={51}  quality="100" className={styles.comingSoonTab} alt='google play'/>
+          <Image src='/coming-soon-phone.png' width={1400} height={51}  quality="100" className={styles.comingSoonTab} alt='google play'/>
           <Image src='/coming-soon-laptop.png' width={1940} height={51}  quality="100" className={styles.comingSoonLaptop} alt='google play'/>
         </div>
 
@@ -132,12 +137,12 @@ export default function Home() {
 
             <div className={styles.box}>
               <Image src='/bullet.png'  width={20}  height={26} className={styles.boxImg} alt='bullet'/>
-              <ol><b>N100</b> when they order product above N1000; </ol>
+              <ol><b>N100</b> when they order product above N1,000; </ol>
             </div>
 
             <div className={styles.box}>
               <Image src='/bullet.png'  width={20}  height={1} className={styles.boxImg} alt='bullet'/>
-              <ol><b>N50</b> when they order products below #1000.</ol>
+              <ol><b>N50</b> when they order products below N1000.</ol>
             </div>
 
             <button>
@@ -170,10 +175,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div  className={styles.freshchat}>
-          <Image src='/freshchat-icon.png'  width={100} height={41}  className={ styles.freshchatIcon }  alt='freshchat icon'/>
-        </div>
-
         <div className={ styles.FAQ }>
           <div className={ styles.row }>
             <div className={styles.box1}>
@@ -188,7 +189,7 @@ export default function Home() {
           <Accordion>
             <AccordionItem style={{
               borderTop: 'none',
-              fontSize: '10pt'
+              // fontSize: '10pt'
             }}>
               <h2>
                 <AccordionButton >
@@ -198,7 +199,7 @@ export default function Home() {
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4}>
+              <AccordionPanel className={ styles.accPanel } pb={4}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -215,7 +216,7 @@ export default function Home() {
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4}>
+              <AccordionPanel className={ styles.accPanel } pb={4}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -232,7 +233,7 @@ export default function Home() {
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4}>
+              <AccordionPanel className={ styles.accPanel } pb={4}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea

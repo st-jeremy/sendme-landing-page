@@ -57,7 +57,7 @@
   border-radius: 5px 0px 0 5px;
   color: black;
   height:50px;
-  width: 200px;
+  max-width: 200px;
 }
 .subBtn{
   background-color: white;
@@ -80,11 +80,6 @@
   margin-right: 1.5rem;
 }
 
-@media only screen and (min-width: 631px) {
-  .subBtn{
-    /* padding: 16.5px 20px 20px; */
-  }
-}
 
 @media only screen and (min-width: 768px) {
   .footer{
@@ -152,6 +147,6 @@
    right: 8%;
   }
   .end{
-    right: 25.5%;
+    right: 21.9%;
   }
 }

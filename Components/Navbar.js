@@ -45,7 +45,7 @@ const Navbar = () => {
   const menuList = {
     color: 'black',
     fontSize: '14pt',
-    width: '25rem'
+    minWidth: '25rem'
   };
   const menuItem = {
     color: 'black',
@@ -86,7 +86,7 @@ const Navbar = () => {
     const menuStyle = {
       position: 'absolute',
       right: '4%',
-      top: '30%',
+      top: '35%',
       color: 'isWhiteSpaceLike',
       backgroundColor: 'white',
       height: '1.5rem',
@@ -103,7 +103,8 @@ const Navbar = () => {
         <Drawer 
           placement='right'
           onClose={onClose} 
-          isOpen={isOpen} 
+          isOpen={isOpen}
+          className={ styles.drawer}
         >
 
           <DrawerOverlay />
@@ -126,6 +127,7 @@ const Navbar = () => {
                   paddingTop: '.2rem'
                   }} />
               </Link> <br />
+              <br />
 
               <Link href="/">
                 For Businesses 
@@ -134,6 +136,7 @@ const Navbar = () => {
                 paddingTop: '.2rem'
                 }} />
               </Link> <br />
+              <br />
 
               <Link href="/Career">
                 Our Culture
@@ -152,7 +155,9 @@ const Navbar = () => {
 
   return (
     <div className={ styles.navbar }>
-      <Image src='/sendme-logo.png' width={70}  height={29} className={ styles.menu } alt='sendme logo'/>
+      <Link href='/'>
+        <Image src='/sendme-logo.png' width={70}  height={29} className={ styles.menu } alt='sendme logo'/>
+      </Link>
 
       <Hamburger className={ styles.hamburger } />
 
@@ -172,7 +177,7 @@ const Navbar = () => {
                 }}
               />
 
-              <MenuItem style={ menuItem }>
+              <MenuItem style={ menuItem } >
                 <div>
                   <Image
                     boxSize='2rem'
@@ -352,23 +357,47 @@ const Navbar = () => {
               />
 
               <MenuItem style={ menuItem }>
-                <div>
-                  <Image
-                    boxSize='2rem'
-                    borderRadius='full'
-                    src='/career-icon.png'
-                    alt='Career'
-                    mr='12px'
-                    width={ 30 }
-                    height={ 30 }
-                    style={ itemImg }
-                  /> &nbsp; 
-                  <span style={ itemSpan }>Career</span>
-                  <BsArrowRight style={ itemIcon } />
-                </div>
-                <div>
-                  <span style={ span }>Be a part of the drive for excellence. Join the amazing team of experts at Sendme.</span>
-                </div>
+                <Link href='/Career'>
+                  <div>
+                    <Image
+                      boxSize='2rem'
+                      borderRadius='full'
+                      src='/career-icon.png'
+                      alt='Career'
+                      mr='12px'
+                      width={ 30 }
+                      height={ 30 }
+                      style={ itemImg }
+                    /> &nbsp; 
+                    <span style={ itemSpan }>Career</span>
+                    <BsArrowRight style={ itemIcon } />
+                  </div>
+                  <div>
+                    <span style={ span }>Be a part of the drive for excellence. Join the amazing team of experts at Sendme.</span>
+                  </div>
+                </Link>
+              </MenuItem>
+
+              <MenuItem style={ menuItem }>
+                <Link href='/WhoWeAre'>
+                  <div>
+                    <Image
+                      boxSize='2rem'
+                      borderRadius='full'
+                      src='/career-icon.png'
+                      alt='Career'
+                      mr='12px'
+                      width={ 30 }
+                      height={ 30 }
+                      style={ itemImg }
+                    /> &nbsp; 
+                    <span style={ itemSpan }>Who We Are</span>
+                    <BsArrowRight style={ itemIcon } />
+                  </div>
+                  <div>
+                    <span style={ span }>Explore who we are at Sendme, our passion and drive.</span>
+                  </div>
+                </Link>
               </MenuItem>
 
               <MenuDivider />

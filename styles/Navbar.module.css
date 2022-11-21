@@ -7,10 +7,12 @@
   background-color: white;
   width: 100%;
   top: 0%;
+  max-width: 1500px;
 }
 .menu{
   padding-left: 1rem;
   width: fit-content;
+  height: 40px;
 }
 .menuBar{
   display: none;
@@ -23,8 +25,11 @@
 
 @media only screen and (min-width: 768px) {
   .navbar{
-    height: 4rem;
+    height: 5.5rem;
     padding-left: 2%;
+  }
+  .menu{
+    height: fit-content;
   }
 }
 
@@ -35,11 +40,19 @@
   .menuBar{
     display: block;
     margin: auto;
-    margin-top: 1.0rem;
-    font-size: 19pt;
+    margin-top: 2.2rem;
+    /* font-size: 29pt; */
   }
   .hamburger{
     display: none;
+  }
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  .drawer{
+    background-color: rgb(6, 6, 6);
+    color: white;
   }
 }
 
