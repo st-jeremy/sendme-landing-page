@@ -56,12 +56,13 @@
   background-color: #d7d9e4;
   border-radius: 5px 0px 0 5px;
   color: black;
-  padding: 16px;
   height:50px;
+  width: 200px;
 }
 .subBtn{
   background-color: white;
-  height: 2.5rem;
+  height: 50px;
+  width: 45px;
   padding: 0px 16px 3.2px;
   border-radius: 0px 5px 5px 0px;
 }
@@ -81,14 +82,7 @@
 
 @media only screen and (min-width: 631px) {
   .subBtn{
-    padding: 16.5px 20px 20px;
-    /* height: fit-content; */
-  }
-}
-
-@media only screen and (min-width: 692px) {
-  .subBtn{
-    padding: 11.5px 20px 17px;
+    /* padding: 16.5px 20px 20px; */
   }
 }
 
@@ -104,11 +98,14 @@
 
 @media only screen and (min-width: 1024px) {
   .footer{
-    padding: 5rem 5.5rem 6rem;
+    padding: 5rem 5.5rem 4rem;
+    display: flex;
+    flex-direction: column;
   }
   .row{
     display: flex;
     width: 60%;
+    order: 1;
   }
   .contactUs{
     margin-right: 1rem;
@@ -120,40 +117,41 @@
   }
   .subscribe{
     position: absolute;
-    right: 3%;
-    width: 20rem;
-    margin-top: -23rem;
+    right: 3.7%;
+    width: 350px;
+    margin-top: 7.5rem;
     background-color: rgb(48, 47, 47);
     padding: 1.5rem 2.5rem 2.5rem;
+    order: 2;
   }
   .subBtn{
-    padding: 11.5px 20px 15px;
+    padding: 10px 20px 14px;
   }
   .getApp{
     margin-top: 4rem;
     margin-bottom: 5rem;
+    order: 3;
   }
   .socialMedia{
     position: absolute;
-    right: 0;
-    margin: -6.5rem 1rem 3rem;
+    right: 5%;
+    bottom: 3.5%;
   }
   .end{
-    margin: -7rem 1rem 2rem 25rem;
+    position: absolute;
+    right: 20%;
+    bottom: 3.3%;
   }
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1100px) {
   .subscribe{
-    position: absolute;
-    right: 12%;
+    right: 8%;
   }
   .socialMedia{
-   position: absolute;
-   right: 10%;
+   right: 8%;
   }
   .end{
-    position: absolute;
     right: 25.5%;
   }
 }

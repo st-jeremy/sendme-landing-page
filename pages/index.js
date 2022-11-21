@@ -155,7 +155,7 @@ export default function Home() {
         </div>
 
         <div className={styles.mobileApp}>
-          <div className={styles.box}>
+          <div className={styles.box1}>
             <h2>Make The Best Meals With the Best Meat</h2>
             <p>Order meat on sendme mobile app</p>
           
@@ -165,7 +165,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
+          <div className={styles.box2}>
             <Image src='/mobileScreen.png' width={ 500 } height={ 500 } className={ styles.mobileScreen }alt='mobile screen'/>
           </div>
         </div>
