@@ -373,10 +373,18 @@
   }
   .header .col2{
     width: 55%;
+    height: 90%;
     display: block;
+    background-image: url('/imageStack.png');
+    background-position: 70%;
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    border-radius: 185px;
   }
   .header .col2 img{
-    border-radius: 30px 155px 155px 30px
+    width: 94%;
+    height: 90%;
+    border-radius: 45px;
   }
   .mainHeading{
     font-size: 66px;

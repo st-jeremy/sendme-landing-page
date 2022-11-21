@@ -14,8 +14,48 @@ import {
   Box
 } from '@chakra-ui/react';
 
+import React from 'react';
+import { Fade } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+
 
 export default function Home() {
+
+const fadeImages = [
+  {
+  url: '/slide1.png',
+  caption: ''
+  },
+  {
+  url: '/slide2.png',
+  caption: ''
+  },
+  {
+  url: '/slide3.png',
+  caption: ''
+  },
+  {
+    url: '/slide4.png',
+    caption: ''
+  }
+];
+
+const Slideshow = () => {
+  return (
+    <div className="slide-container">
+      <Fade>
+        {fadeImages.map((fadeImage, index) => (
+          <div className="each-fade" key={index}>
+            <div className="image-container">
+              <Image src={fadeImage.url} alt='slide show' width={500} height={500}/>
+            </div>
+            <h2>{fadeImage.caption}</h2>
+          </div>
+        ))}
+      </Fade>
+    </div>
+  )
+}
   return (
     <>
       <Head>
@@ -57,10 +97,9 @@ export default function Home() {
           </div>
 
           <div className={ styles.col2 }>
-            <Image src='/imageStack.png' width={2000}  height={41} alt='image'/>
+            <Slideshow />
           </div>
         </div>
-
 
         <div  className={styles.freshchat}>
           <Image src='/freshchat-icon.png'  width={60} height={41}  className={ styles.freshchatIcon }  alt='freshchat icon'/>
