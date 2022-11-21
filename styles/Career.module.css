@@ -40,3 +40,12 @@
   font-size: 10pt;
   font-weight: 700;
 }
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  .career{
+    background-color: rgb(6, 6, 6);
+    color: white;
+  }
+
+}

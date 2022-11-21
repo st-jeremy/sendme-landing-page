@@ -360,6 +360,9 @@
     width: 55%;
     display: block;
   }
+  .col2 img{
+    border-radius: 30px;
+  }
   .mainHeading{
     font-size: 66px;
     font-weight: 900;
@@ -458,5 +461,17 @@
   .mobileApp .box{
     width: 35%;
     right: 12rem;
+  }
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  .content{
+    background-color: rgb(6, 6, 6);
+    color: white;
+  }
+  .earnWithSendme{
+    background-color: rgb(6, 6, 6);
+    color: white;
   }
 }

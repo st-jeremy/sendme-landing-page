@@ -17,3 +17,12 @@
   padding: .5rem 5%;
   font-size: 12pt;
 }
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  .whoWeAre{
+    background-color: rgb(6, 6, 6);
+    color: white;
+  }
+
+}
