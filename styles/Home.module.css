@@ -471,6 +471,11 @@
     width: 50%;
     max-width: 25rem;
   }
+
+  /* FAQ */
+  .accBox br{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -489,6 +494,24 @@
     right: 8rem;
   }
 }
+
+@media only screen and (min-width: 1900px) {
+  /* freshchat */
+  .freshchatIcon{
+    top: 85%;
+    right: 20%;
+  }
+}
+
+
+@media only screen and (min-width: 2500px) {
+  /* freshchat */
+  .freshchatIcon{
+    top: 85%;
+    right: 25%;
+  }
+}
+
 @media only screen and (min-width: 1523px) {
   .mobileApp .box{
     width: 35%;
