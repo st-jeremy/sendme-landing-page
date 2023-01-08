@@ -12,6 +12,7 @@ import {
   Box
 } from '@chakra-ui/react';
 import Slideshow from '../Components/Slideshow';
+import Header from '../Components/Header';
 
 
 export default function Home() {
@@ -25,11 +26,9 @@ export default function Home() {
       </Head>
 
       <div className={ styles.content }>
-        
+        <Header />
 
-        <div  className={styles.freshchat}>
-          <Image src='/freshchat-icon.png'  width={60} height={41}  className={ styles.freshchatIcon }  alt='freshchat icon'/>
-        </div>
+        
 
         <div className={styles.comingSoon}>
           <Image src='/coming-soon-phone.png' width={700} height={51}  quality="100" className={styles.comingSoonPhone} alt='google play'/>
