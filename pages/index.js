@@ -1,5 +1,5 @@
 import Head from 'next/head';
-
+import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { BsArrowUpRight } from 'react-icons/bs';
@@ -11,12 +11,11 @@ import {
   AccordionIcon,
   Box
 } from '@chakra-ui/react';
-import React from 'react';
+import Slideshow from '../Components/Slideshow';
 
 
 export default function Home() {
 
- 
   return (
     <>
       <Head>
@@ -26,41 +25,7 @@ export default function Home() {
       </Head>
 
       <div className={ styles.content }>
-        <div className={ styles.header }>
-          <div className={ styles.col1 }>
-            <h1 className={ styles.mainHeading }>
-              Get The <span className={ styles.red }> <br />
-              Best Meat</span> in <span  className={ styles.grey }>30</span>Mins.
-            </h1>
-            
-            <br />
-
-            <p className={ styles.grey }>Focus on the things that matter while we handle your animal protein needs by giving you premium quality meat at the best prices.
-            </p>
-            <br />
-
-            <button className={ styles.btn}>
-              Order meat on web now &nbsp; &nbsp;
-              <AiOutlineArrowRight style={{
-                display: 'inline-block',
-                paddingTop: '.3rem'
-                }} 
-              />
-            </button>
-            <br />
-            <br />
-
-            <p className={ styles.black }>or Get the app</p>
-            <div className={ styles.store }>
-              <Image src='/app-store.png' width={142}  height={41} alt='app store'/>
-              <Image src='/google-play.png' width={142}  height={41} alt='google play'/>
-            </div>
-          </div>
-
-          <div className={ styles.col2 }>
-            <Slideshow />
-          </div>
-        </div>
+        
 
         <div  className={styles.freshchat}>
           <Image src='/freshchat-icon.png'  width={60} height={41}  className={ styles.freshchatIcon }  alt='freshchat icon'/>

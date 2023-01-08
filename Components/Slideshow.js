@@ -38,3 +38,4 @@ const Slideshow = () => {
     </Box>
   )
 }
+export default Slideshow;
