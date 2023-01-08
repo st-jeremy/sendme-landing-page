@@ -12,7 +12,6 @@ const Header = () => {
           Get The <span className={ styles.red }> <br />
           Best Meat</span> in <span  className={ styles.grey }>30</span>Mins.
         </h1>
-        
         <br />
 
         <p className={ styles.grey }>Focus on the things that matter while we handle your animal protein needs by giving you premium quality meat at the best prices.
@@ -33,8 +32,8 @@ const Header = () => {
 
         <p className={ styles.black }>or Get the app</p>
         <div className={ styles.store }>
-          <Image src='/app-store.png' width={142}  height={41} alt='app store'/>
-          <Image src='/google-play.png' width={142}  height={41} alt='google play'/>
+          <Image src='/app-store.png' width={142}  height={41} loading='lazy' alt='app store'/>
+          <Image src='/google-play.png' width={142}  height={41} loading='lazy' alt='google play'/>
         </div>
       </div>
 
