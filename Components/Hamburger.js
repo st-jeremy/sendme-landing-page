@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import { BiMenu } from 'react-icons/bi';
+import styles from '../styles/Navbar.module.css';
 import Link from 'next/link';
-
-
+import { IoMdArrowDropdownCircle } from 'react-icons/io';
+import { useState } from 'react';
 import {
   Drawer,
   DrawerBody,
@@ -12,11 +13,12 @@ import {
   DrawerCloseButton,
   Button,
   useDisclosure,
+  Box
 } from '@chakra-ui/react';
 
 export default function Hamburger() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [placement, setPlacement] = React.useState('right');
+  const [placement, setPlacement] = useState('right');
 
   const menuStyle = {
     position: 'absolute',
@@ -29,7 +31,7 @@ export default function Hamburger() {
   };
 
   return (
-    <>
+    <Box  className={ styles.hamburger } >
       <Button onClick={onOpen} left style={ menuStyle } className={ styles.hamburger}>
         < BiMenu />
       </Button>
@@ -83,6 +85,6 @@ export default function Hamburger() {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-    </>
+    </Box>
   )
 };

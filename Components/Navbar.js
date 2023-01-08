@@ -5,29 +5,16 @@ import { IoMdArrowDropdownCircle } from 'react-icons/io';
 import { BsArrowRight } from 'react-icons/bs';
 import { BiPhoneCall } from 'react-icons/bi';
 import { MdOutlineMail } from 'react-icons/md';
-import { BiMenu } from 'react-icons/bi';
-
-
+import Hamburger from "./Hamburger";
 import {
-  Drawer,
-  DrawerBody,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  RadioGroup,
   Button,
-  useDisclosure,
   Menu,
   MenuButton,
   MenuList,
   MenuItem,
   MenuGroup,
   MenuDivider,
-  HamburgerIcon
 } from '@chakra-ui/react';
-
-import React from "react";
 
 const Navbar = () => {
   const menu ={
@@ -87,7 +74,7 @@ const Navbar = () => {
         <Image src='/sendme-logo.png' width={70}  height={29} className={ styles.menu } alt='sendme logo'/>
       </Link>
 
-      <Hamburger className={ styles.hamburger } />
+      <Hamburger/>
 
       <div className={ styles.menuBar }>
         <Menu style={ menu }>
