@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react';
 import Slideshow from '../Components/Slideshow';
 import Header from '../Components/Header';
+import FreshChat from '../Components/FreshChat';
 
 
 export default function Home() {
@@ -28,13 +29,9 @@ export default function Home() {
       <div className={ styles.content }>
         <Header />
 
-        
+        <FreshChat />
 
-        <div className={styles.comingSoon}>
-          <Image src='/coming-soon-phone.png' width={700} height={51}  quality="100" className={styles.comingSoonPhone} alt='google play'/>
-          <Image src='/coming-soon-phone.png' width={1400} height={51}  quality="100" className={styles.comingSoonTab} alt='google play'/>
-          <Image src='/coming-soon-laptop.png' width={1940} height={51}  quality="100" className={styles.comingSoonLaptop} alt='google play'/>
-        </div>
+        
 
         <div className={styles.animalProtein}>
           <h2>Buy Animal Proteins</h2>
