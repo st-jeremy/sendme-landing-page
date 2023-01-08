@@ -1,4 +1,13 @@
 import Image from "next/image";
+import styles from '../styles/Home.module.css';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box
+} from '@chakra-ui/react';
 
 const FAQ = () => {
   return ( 

@@ -1,5 +1,8 @@
 import { Box } from "@chakra-ui/react";
 import Image from "next/image";
+import styles from '../styles/Home.module.css';
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import Slideshow from "./Slideshow";
 
 const Header = () => {
   return ( 
@@ -35,9 +38,9 @@ const Header = () => {
         </div>
       </div>
 
-        <div className={ styles.col2 }>
-          <Slideshow />
-        </div>
+      <div className={ styles.col2 }>
+        <Slideshow />
+      </div>
     </Box>
    );
 }
