@@ -1,10 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
-
 import styles from '../styles/Home.module.css';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { BsArrowUpRight } from 'react-icons/bs';
-
 import {
   Accordion,
   AccordionItem,
@@ -13,7 +11,6 @@ import {
   AccordionIcon,
   Box
 } from '@chakra-ui/react';
-
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
@@ -21,41 +18,41 @@ import 'react-slideshow-image/dist/styles.css';
 
 export default function Home() {
 
-const fadeImages = [
-  {
-  url: '/slide1.png',
-  caption: ''
-  },
-  {
-  url: '/slide2.png',
-  caption: ''
-  },
-  {
-  url: '/slide3.png',
-  caption: ''
-  },
-  {
-    url: '/slide4.png',
+  const fadeImages = [
+    {
+    url: '/slide1.png',
     caption: ''
-  }
-];
+    },
+    {
+    url: '/slide2.png',
+    caption: ''
+    },
+    {
+    url: '/slide3.png',
+    caption: ''
+    },
+    {
+      url: '/slide4.png',
+      caption: ''
+    }
+  ];
 
-const Slideshow = () => {
-  return (
-    <div className="slide-container">
-      <Fade>
-        {fadeImages.map((fadeImage, index) => (
-          <div className="each-fade" key={index}>
-            <div className="image-container">
-              <Image src={fadeImage.url} alt='slide show' width={500} height={500}/>
+  const Slideshow = () => {
+    return (
+      <div className="slide-container">
+        <Fade>
+          {fadeImages.map((fadeImage, index) => (
+            <div className="each-fade" key={index}>
+              <div className="image-container">
+                <Image src={fadeImage.url} alt='slide show' width={500} height={500}/>
+              </div>
+              <h2>{fadeImage.caption}</h2>
             </div>
-            <h2>{fadeImage.caption}</h2>
-          </div>
-        ))}
-      </Fade>
-    </div>
-  )
-}
+          ))}
+        </Fade>
+      </div>
+    )
+  }
   return (
     <>
       <Head>
