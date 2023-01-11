@@ -50,17 +50,15 @@ const Footer = () => {
         <p>Get the App:</p>
         
         <div className={ styles.store }>
-          <Image src='/app-store-white.png' width={140}  height={130} alt='app store'/>
-          <Image src='/google-play-white.png' width={140}  height={130} alt='google play'/>
+          <Image src='/app-store-white.png' width={140} height={130} alt='app store'/>
+          <Image src='/google-play-white.png' width={140} height={130} alt='google play'/>
         </div>
-
       </div>
 
       <div  className={ styles.socialMedia}>
-        <a href="http://instagram.com" className={ styles.social } >
-        <BsInstagram /></a>
-        <a href="http://facebook.com"  className={ styles.social } ><FaFacebook /></a>
-        <a href="http://twitter.com"  className={ styles.social } ><Image src='/twitter.png' width={20}  height={20} alt='twitter'/></a>
+        <a href="http://instagram.com" className={ styles.social }><BsInstagram /></a>
+        <a href="http://facebook.com"  className={ styles.social }><FaFacebook /></a>
+        <a href="http://twitter.com"  className={ styles.social }><Image src='/twitter.png' width={20}  height={20} alt='twitter'/></a>
       </div>
 
       <div className={ styles.subscribe}>

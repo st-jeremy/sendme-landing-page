@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css';
 const FreshChat = () => {
   return ( 
     <div  className={styles.freshchat}>
-      <Image src='/freshchat-icon.png'  width={60} height={41}  className={ styles.freshchatIcon }  alt='freshchat icon'/>
+      <Image src='/freshchat-icon.png'  width={60} height={41} className={ styles.freshchatIcon }  alt='freshchat icon'/>
     </div>
    );
 }
