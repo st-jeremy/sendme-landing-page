@@ -35,10 +35,13 @@ const EarnWithSendme = () => {
         </div>
 
         <button>
-          Start Earning &nbsp;<BsArrowUpRight style={{
-            display: 'inline-block',
-            paddingTop: '.3rem'
-          }} />
+          Start Earning &nbsp;
+          <BsArrowUpRight 
+            style={{
+              display: 'inline-block',
+              paddingTop: '.3rem'
+            }} 
+          />
         </button>
       </div>
 
