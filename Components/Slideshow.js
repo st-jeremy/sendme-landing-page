@@ -7,11 +7,11 @@ const Slideshow = () => {
   const fadeImages = [
     {
     url: '/slide1.png',
-    caption: ''
+    caption: 'slide'
     },
     {
     url: '/slide2.png',
-    caption: ''
+    caption: 'slide'
     },
     {
     url: '/slide3.png',
