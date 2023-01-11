@@ -24,10 +24,12 @@ const B2B = () => {
 
       <a href="http://business.sendme.ng" className={ styles.B2BLink}>
         Order meat for your business &nbsp; &nbsp;
-        <AiOutlineArrowRight  style={{
-          display: 'inline-block',
-          paddingTop: '.2rem'
-        }}/>
+        <AiOutlineArrowRight  
+          style={{
+            display: 'inline-block',
+            paddingTop: '.2rem'
+          }}
+        />
       </a>
     </div>
    );

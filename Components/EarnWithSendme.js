@@ -23,7 +23,6 @@ const EarnWithSendme = () => {
           <li>
             <ol><b>N100</b> when they order product above N1,000; </ol>
           </li>
-          
         </div>
 
         <div className={styles.box}>
