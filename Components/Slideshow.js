@@ -15,11 +15,11 @@ const Slideshow = () => {
     },
     {
     url: '/slide3.png',
-    caption: ''
+    caption: 'slide'
     },
     {
       url: '/slide4.png',
-      caption: ''
+      caption: 'slide'
     }
   ];
 
